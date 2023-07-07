@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Numerology Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="planet-map-section">
+        <h2>Planet Map</h2>
+        <ul id="planetMapList"></ul>
+      </div>
+      <div class="calculation-section">
+        <h1>Numerology Calculator</h1>
+        <input
+          type="text"
+          id="nameInput"
+          placeholder="Enter a name"
+          onkeyup="handleKeyUp(event)"
+          required
+        />
+        <br />
+        <button onclick="calculateNumericValue()">Calculate</button>
+        <div id="result"></div>
+      </div>
+      <div class="history-section">
+        <h2>History</h2>
+        <ul id="historyList"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
